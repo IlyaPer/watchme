@@ -1,183 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 body{
-    font-family: sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
-.text{
-    text-align: center;
+.main-grid{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 110%;
 }
-.block{
-    display:block;
+.menu-container{
+    background-color: #F0F0F0;
+    margin: 0px;
+    padding-top: 30px;
+    text-align: left;
+}
+.pointer{
+    padding-left: 15px;
+}
+.pointer:hover{
+    padding-left: 25px;
+}
+.pointer-notes{
+    padding-left: 10px;
+}
+.my-account{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 40px 10px 210px 50px;
+    grid-template-rows: 15px;
+}
+.my-account:hover{
+    font-weight: bold;
+}
+.up{
+    margin-top: 3px;
+}
+.upper{
+    margin-top: 15px;
+}
+.month-button{
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50%;
+    width: 190px;
+    display: grid;
+    grid-template-columns: 160px 20px;
+    grid-template-rows: 50px;
 }
-.button7 {
-  text-align: center;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  padding: .8em 1em calc(.8em + 3px);
-  border-radius: 3px;
-  background: rgb(64,199,129);
-  box-shadow: 0 -3px rgb(53,167,110) inset;
-  transition: 0.2s;
+.up20{
+    padding-top: 20px;
+    width: 20px;
 }
-.button7:hover { background: rgb(53, 167, 110); }
-.button7:active {
-  background: rgb(33,147,90);
-  box-shadow: 0 3px rgb(33,147,90) inset;
+.first-point{
+    grid-column: 1 / 1;
 }
-.button8 {
-  text-align: center;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  padding: .8em 1em calc(.8em + 3px);
-  border-radius: 3px;
-  background: red;
-  box-shadow: 0 -3px rgb(53,167,110) inset;
-  transition: 0.2s;
+.second-point{
+    grid-column: 2 / 2;
 }
-a.button8:hover { background: rgb(53, 167, 110); }
-a.button8:active {
-  background: crimson;
-  box-shadow: 0 3px rgb(33,147,90) inset;
+.up:hover{
+    cursor:pointer;
 }
-/* Registration */
-.container {
-  padding: 16px;
+.my-account-element{
+    width: 20px;
+    height: 10px;
 }
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+.grid-logout{
+    width: 120px;
+    display: grid;
+    grid-template-columns: 90px 30px;
+    grid-template-rows: 30px 30px;
+    grid-gap: 5px;
 }
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+.menu-button{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 140px 10px;
+    grid-template-rows: 28px;
 }
-
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+.menu-button:hover{
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 20px;
 }
-
-/* Set a style for the submit/register button */
-.registerbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+.notes-grid{
+    display: grid;
+    grid-template-columns: 20px 40px;
+    padding-left: 15px;
+}
+.notes-grid:hover{
+    padding-left: 25px;
+    cursor: pointer;
+}
+.width20{
+    width: 20px;
+}
+.tasks-container{
+    text-align: center;
+    padding-top: 100px;
 }
 
-.registerbtn:hover {
-  opacity:1;
+.container-targets{
+    padding-left: 10px;
+}
+.year-target{
+    font-size: 25px;
+}
+a{
+    width: 100%;
+    text-decoration: none;
+    color: #909090;
+}
+a:hover{
+    color: black;
+}
+.month-days{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+    margin 10px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.month-days button{
+    width: 190px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.month-days button:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
 }
 
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
+.day{
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(235, 235, 235, 1);
+    transition: 0.3s;
+    border-radius: 15px;
 }
-
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
+.day:hover{
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    cursor: pointer;
 }
-.right{
-    margin-left: 160px;
-    margin-top: -18px;
+.text-days{
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 700;
 }
-#menu__toggle {
-  opacity: 0;
+.day-tasks{
+    list-style: none;
+    text-decoration: none;
+    width: 50%;
 }
-/* стилизуем кнопку */
-.menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 1;
-}
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-/* контейнер меню */
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  text-align: center;
-  background-color: white;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-}
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
-}
-/* элементы меню */
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.menu__item:hover {
-  background-color: #CFD8DC;
+.align-content{
+    margin-left: 25%;
 }
 .flex-container{
+    width: 395px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 13px;
     padding: 0;
     list-style: none;
@@ -190,58 +178,10 @@ a {
   border: none;
   background: #f1f1f1;
 }
-.grid{
-    margin-top: 50px;
-    display: grid;
-    max-width: 1050px;
-    grid-template-columns: repeat(6, 150px);
-    grid-template-rows: repeat(6, 150px);
-}
-.grid-item{
-    border: 1px solid black;
-}
-.grid-item:hover{
-    background-color: gold;
-    align-content: center;
-}
-.active-day{
-    border: 6px solid gold;
-}
-.align-grid{
-    display: grid;
-    align-items: center;
-}
-[id^=c]{
-    display: none;
-}
-[id^=c] + label{
-    display: block;
-    width: 100%;
-    height: 85%;
-    text-align: center;
-    position: relative;
-}
-[id^=c] + label:before{
-    content: '';
-    position: absolute; top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: green;
-    -webkit-clip-path: polygon(45% 64%, 84% 14%, 100% 28%, 47% 100%, 0 49%, 15% 32%);
-clip-path: polygon(45% 64%, 84% 14%, 100% 28%, 47% 100%, 0 49%, 15% 32%);
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: transform .3s;
-    transition: transform .3s;
-}
-[id^=c]:checked + label:before{
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
 .half{
-  width: 50%;
-  padding: 15px;
+  width: 350px;
+  height: 35px;
+  padding-top: 5px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
@@ -252,250 +192,300 @@ clip-path: polygon(45% 64%, 84% 14%, 100% 28%, 47% 100%, 0 49%, 15% 32%);
   color: green;
     cursor:pointer;
 }
-[id^=t]{
-    display: none;
+.done-container{
+    width: 395px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 13px;
+    list-style: url("svg/done.svg");
 }
-[id^=t] + label{
-    display: block;
-    width: 100%;
-    height: 85%;
-    text-align: center;
-    position: relative;
-}
-[id^=t] + label:before{
-    content: '';
-    position: absolute; top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: green;
-    -webkit-clip-path: polygon(45% 64%, 84% 14%, 100% 28%, 47% 100%, 0 49%, 15% 32%);
-clip-path: polygon(45% 64%, 84% 14%, 100% 28%, 47% 100%, 0 49%, 15% 32%);
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: transform .3s;
-    transition: transform .3s;
-}
-[id^=t]:checked + label:before{
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-input[type=task] {
-  width: 50%;
-  margin-left: auto;
-  padding: 15px;
+.done-task{
+  width: 350px;
+  height: 35px;
+  padding-top: 5px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
+  text-decoration: line-through;
+  color: green;
+}
+input[type=task] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
   background: #f1f1f1;
 }
-.center-task{
-    display: grid;
+
+.btn {
+    height: 45px;
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
 }
-.card{
-    display:block;
-    background-color: goldenrod;
-    width: 30%;
+.green{
+   background: rgba(45, 181, 66, 1); 
+}
+.green: hover{
+   box-shadow: 10px solid black;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: orangered;
+}
+.settings{
+    color: #CDCDCD;
+}
+.add-button{
+    width: 80%;
+    height: 20px;
+}
+.submit-button{
+    font-size: 15px;
+}
+.submit-button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.align{
+    text-align: center;
+}
+.tarif{
+    display: grid; 
+    margin: 20px;
+    grid-template-columns: 35% 35%;
+    text-align: center;
+    grid-gap: 20%;
+    
+}
+.grid-element-tarif{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 200px;
+}
+.tarif-done{
+    display: grid;
+    grid-template-columns: 190px 20px;
+    grid-template-rows: 20px;
+}
+.year-goals{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 0;
+    list-style:url("svg/003-darts.svg");
+    padding-left: 20px;
+}
+.year-goal{
+    padding-left: 20px;
+    margin: 10px;
+    width: 70%;
+    height: 30px;
+    font-size: 20px;
+}
+.flex-support{
+    display: grid;
+    grid-template-columns: 200px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.all-months{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    grid-gap: 10px;
+}
+.all-months-element{
+    background-color: rgba(235, 235, 235, 1);
+    text-align: center;
+    vertical-align:bottom;
+    border-radius: 15px;
+    padding-top: 10px;
+}
+.all-months-element:hover{
+    background-color: rgba(245, 235, 235, 1);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    cursor: pointer;
+    
+}
+.active{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+.main-tasks-container{
+    width: 410px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 0;
+    list-style: none;
+    padding-left: 40px;
+}
+.task-element{
+    font-size: 20px;
+}
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:21px;
+    height:21px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    border: 2px  solid black;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    border: none;
+    background: url("svg/003-darts.svg") no-repeat;
+    
+}
+input[type="checkbox"]:checked span{
+    text-decoration: line-through;
+    text-decoration-color: green;
+}
+button{
+    width: 150px;
+    height:40px;
+}
+.button-add-people{
+    display: grid;
+    grid-template-columns: 100px 25px;
+    border-radius: 10px;
+    background-color: white;
+}
+.button-add-people:hover{
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    cursor: pointer;
+}
+.left{
+    width: 25px;
+}
+.delete:hover{
+    background-color: #f23333;
+    color: white;
+}
+.rules{
+    padding-top: 90%;
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+}
+a:hover{
+    cursor: pointer;
+}
+/* Expitement */
+        * {
+		    box-sizing: border-box;
+		}
+		.checkbox-first__label{
+			cursor: pointer;
+			user-select: none;
+		}
+		.checkbox-first__label input:checked + .checkbox {
+			border-color: #25b9d4;
+		}
+		.checkbox-first__label .checkbox svg {
+			position: absolute;
+			top: -2px;
+			left: -2px;
+		}
+		.checkbox-first__label input:checked + .checkbox svg path {
+			fill: #25b9d4;
+		}
+		.checkbox-first__label input:checked + .checkbox svg polyline {
+		    stroke-dashoffset: 0;
+		}
+		.checkbox-first__label:hover .checkbox svg path {
+			stroke-dashoffset: 0;
+		}
+		.checkbox-first__label .checkbox {
+			position: relative;
+            margin-top: 10px;
+			top: 2px;
+			float: left;
+			width: 20px;
+			height: 20px;
+			margin-right: 8px;
+			border-radius: 3px;
+			border: 2px solid #c8ccd4;
+		}
+		.checkbox-first__label .checkbox svg {
+			position: absolute;
+			top: -2px;
+			left: -2px;
+		}
+		.checkbox-first__label .checkbox svg path {
+			fill: none;
+			stroke: #25b9d4;
+			stroke-width: 2;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-dasharray: 71px;
+			stroke-dashoffset: 71px;
+			transition: all 0.6s ease;
+		}
+		.checkbox-first__label .checkbox svg polyline {
+			fill: none;
+			stroke: #fff;
+			stroke-width: 2;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-dasharray: 18px;
+			stroke-dashoffset: 18px;
+			transition: all 0.3s ease;
+		}
+		.checkbox-first__label > span {
+			pointer-events: none;
+			vertical-align: middle;
+		}
+		.checkbox {
+			position: relative;
+			top: 2px;
+			float: left;
+			width: 20px;
+			height: 20px;
+			margin-right: 8px;
+			border-radius: 3px;
+			border: 2px solid #c8ccd4;
+		}
+		.checkbox-first__input {
+			position: absolute;
+			width: 0;
+			height: 0;
+			opacity: 0;
+			z-index: -1;
+		}
+    .checkbox-first__label input:checked .half{
+        text-decoration: line-through;
+        color: green;
+        cursor:pointer;
+    } 
+.new-project-buttons{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 50px;
+}
+.new-project-button{
+    display: block;
     margin-left: auto;
     margin-right: auto;
-
-}
-.Iam {
-  padding: 2em 5em;
-  font: normal 40px/50px Montserrat, sans-serif;
-  color: #999;
-}
-.Iam p {
-  height: 50px;
-  float: left;
-  margin-right: 0.3em;
-}
-.Iam b {
-  float: left;
-  overflow: hidden;
-  position: relative;
-  height: 50px;
-  top: 40px;
-}
-.Iam .innerIam {
-  display: inline-block;
-  color: #e74c3c;
-  position: relative;
-  white-space: nowrap;
-  top: 0;
-  left: 0;
-
-
-/*animation*/
--webkit-animation:move 5s;
-   -moz-animation:move 5s;
-    -ms-animation:move 5s;
-     -o-animation:move 5s;
-        animation:move 5s;
-/*animation-iteration-count*/
--webkit-animation-iteration-count:infinite;
-   -moz-animation-iteration-count:infinite;
-    -ms-animation-iteration-count:infinite;
-     -o-animation-iteration-count:infinite;
-        animation-iteration-count:infinite;
-/*animation-delay*/
--webkit-animation-delay:1s;
-   -moz-animation-delay:1s;
-    -ms-animation-delay:1s;
-     -o-animation-delay:1s;
-        animation-delay:1s;
-}
-@keyframes move{
-0%  { top: 0px; }
-20% { top: -50px; }
-40% { top: -100px; }
-60% { top: -150px; }
-80% { top: -200px; }
-}
-
-@-webkit-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-@-moz-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-@-o-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-@keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-.align-grid{
+    width: 190px;
     display: grid;
-    align-items: center;
-}
-.grid-year{
-    margin-top: 50px;
-    display: grid;
-    max-width: 1050px;
-    grid-template-columns: repeat(6, 220px);
-    grid-template-rows: repeat(6, 220px);
-}
-.grid-item{
-    border: 1px solid black;
-}
-.grid-item:hover{
-    background-color: gold;
-    align-content: center;
-}
-.plus{
-
-}
-.plus:hover {
-  margin-left: 199px;
-  position:relative;
-  border: 1px dotted white;
-  width: 3px;
-  height: 3px;
-  background-color: black;
-  box-sizing: border-box;
-  transform: scale(11);
-}
-.active-day{
-    border: 6px solid gold;
-}
-.edit:hover{
-  background-color: rgb(53, 167, 110);
-}
-.arrow-2 {
-	cursor: pointer;
-	height: 80px;
-	width: 60px;
-	position: relative;
-	margin: 20px;
-}
-.arrow-2-top,
-.arrow-2-bottom {
-	background: #337AB7;
-	height: 10px;
-	left: -30px;
-	position: absolute;
-	top: 60px;
-	width: 50px;
-}
-.arrow-2-top {
-	top: 64px;
-}
-.arrow-2-top {
-	transform: rotate(45deg);
-	transform-origin: bottom right;
-}
-.arrow-3-top {
-	transform: rotate(-45deg);
-	transform-origin: bottom right;
-}
-.arrow-3-bottom {
-	transform: rotate(45deg);
-	transform-origin: top right;
-}
-.arrow-2-bottom {
-	transform: rotate(-45deg);
-	transform-origin: top right;
-}
-.arrow-2-top::after,
-.arrow-2-bottom::after {
-	background: #000;
-	content: '';
-	height: 100%;
-	position: absolute;
-	top: 0;
-	transition: all 0.15s;
-}
-.arrow-2-top::after {
-	left: 100%;
-	right: 0;
-	transition-delay: 0s;
-}
-.arrow-2-bottom::after {
-	left: 0;
-	right: 100%;
-	transition-delay: 0.15s;
-}
-.arrow-2:hover .arrow-2-top::after {
-	left: 0;
-	transition-delay: 0.15s;
-}
-.arrow-2:hover .arrow-2-bottom::after {
-	right: 0;
-	transition-delay: 0s;
-}
-.month_grid{
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 30px;
-  background-color: gold;
-  text-align: center;
-  align-items: center;
-  grid-gap: 2px;
-}
-.month-grid-item{
-}
-.cntr{
-  grid-column: 2/3;
-}
-.lft{
-  grid-column: 1/1;
-}
-.rght{
-  grid-column: 3/3;
+    grid-template-columns: 160px 20px;
+    grid-template-rows: 50px;
 }

@@ -3,41 +3,108 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link href="style.css" rel="stylesheet">
-        <title>Планы на месяц</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Watch Me</title>
 	</head>
 	<body>
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-            <ul class="menu__box">
-              <li><a class="menu__item" href="index.php">Планы на год</a></li>
-              <li><a class="menu__item" href="page.php">Планы на месяц</a></li>
-              <li><a class="menu__item" href="hhtp:">Планы на неделю</a></li>
-              <li><a class="menu__item" href="community.php">Планы на день</a></li>
-              <li><a class="menu__item" href="tarif.html">Настройки и поддержка </a></li>
-            </ul>
-         </div>
-         <h1 class="text">Задачи на сегодня</h1>
-        <hr>
-         <ul class="flex-container">
-            <li class="half">Сдать анализ мочи</li>
-            <li class="half">Не забыть протестировать мочу</li>
-            <li class="half">Пустая цель</li>
-        </ul>
-         <input type="checkbox" name="t1" id="t1"/>
-             <label for="t1"></label>
-        <hr>
-        <form>
-            <input type="task" placeholder="Добавить цель" name="email" required>
-						<input type="task" placeholder="Введите время" name="email" required>
-        </form>
-        <div class="block"><a href="registration.html" class="button7">Добавить цель</a></div>
-        <div class="block right"><a href="add_target.php" class="button8">Редактировать</a></div>
-         <h2 class="text">Дневные заметки:</h2>
-         <form class="text">
-             <textarea name="message" cols="50" rows="10" placeholder="Ваши мысли о сегодняшнем дне. Помните, что фиксируя ваши"></textarea>
-         </form>
+         <div class="main-grid"> 
+             <div class="main-grid"> 
+            <div class="menu-container">
+                <div class="my-account">
+                    <div class="my-account-element">Илья</div>
+                    <div class="my-account-element up"><a><img src="svg/exit.svg"></a></div>
+                    <div></div>
+                    <div class="my-account-element up"><a href="setting.html"><img src="svg/settings.svg"></a></div>
+                </div>
+                <hr>
+                <div class="notes-grid">
+                    <img style="padding-top: 22px;" src="svg/pencil.svg">
+                    <h3 class="pointer-notes">Заметки</h3>
+                </div>
+                <h3 class="pointer"><a href="year.html">Цели на год</a></h3>
+                <h3 class="pointer"><a href="month.html">План на месяц</a></h3>
+                <h3 class="pointer"><a href="day.html">Задачи на день</a></h3>
+                <h3 class="pointer"><a href="test_project.html">Учеба</a></h3>
+                <h3 class="pointer"><a href="test_project.html">Тестовый проект</a></h3>
+                <hr>
+                <div class="menu-button">
+                     <div>Создать проект</div>
+                     <div><img class="width20 up" src="svg/plus.svg"></div>
+                </div>    
+                <div class="rules">
+                     <hr>
+                     <p>@WatchMe 2021. Все права защищены.</p>
+                     <p><a href="politics.html">Политика конфиденциальности</a></p>
+                     <p>ООО "Вотч Ми"</p>
+                </div>
+             </div>
+             <div>
+                <h2 style="text-align: center;">Задачи на день</h2>
+                <hr>
+                <div container="align-content">
+                        <ul class="flex-container">
+                            <li class="half">Сдать анализ мочи</li>
+                            <div class="checkbox-first">
+                                    <label for="checkbox-one" class="checkbox-first__label">
+                                        <input id="checkbox-one" type="checkbox" class="checkbox-first__input">
+                                        <div class="checkbox">
+                                            <svg width="20px" height="20px" viewBox="0 0 20 20">
+                                                <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                                                <polyline points="4 11 8 15 16 6"></polyline>
+                                            </svg>
+                                        </div>
+                                    </label>
+                            </div>
+
+                            <li class="half">Не забыть протестировать мочу</li>
+                            <div class="checkbox-first">
+                                    <label for="checkbox-two" class="checkbox-first__label">
+                                        <input id="checkbox-two" type="checkbox" class="checkbox-first__input">
+                                        <div class="checkbox">
+                                            <svg width="20px" height="20px" viewBox="0 0 20 20">
+                                                <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                                                <polyline points="4 11 8 15 16 6"></polyline>
+                                            </svg>
+                                        </div>
+                                    </label>
+                            </div>
+                            <li class="half">Пустая цель</li>
+                            <div class="checkbox-first">
+                                    <label for="checkbox-one" class="checkbox-first__label">
+                                        <input id="checkbox-one" type="checkbox" class="checkbox-first__input">
+                                        <div class="checkbox">
+                                            <svg width="20px" height="20px" viewBox="0 0 20 20">
+                                                <path d="M3,1 L17,1 L17,1 C18.1045695,1 19,1.8954305 19,3 L19,17 L19,17 C19,18.1045695 18.1045695,19 17,19 L3,19 L3,19 C1.8954305,19 1,18.1045695 1,17 L1,3 L1,3 C1,1.8954305 1.8954305,1 3,1 Z"></path>
+                                                <polyline points="4 11 8 15 16 6"></polyline>
+                                            </svg>
+                                        </div>
+                                    </label>
+                            </div>
+                         </ul>
+                 </div>
+                 
+                <hr>
+                <form>
+                    <input type="task" placeholder="Добавить цель" name="task" required>
+                     <div class="month-button">
+                        <div class="first-point">
+                        <button>
+                             Добавить задачу
+                        </button>
+                        </div>   
+                        <div class="second-point">
+                            <img class="up20" src="svg/plus.svg">
+                        </div>
+                    </div>
+                </form>
+                 <hr>
+                 <h2>Сделанные задачи</h2>
+                 <ul class="done-container">
+                    <li class="done-task">Полить цветы</li>
+                 </ul>
+             </div>
+                 
+            </div>
+        </div>
     </body>
 </html>
