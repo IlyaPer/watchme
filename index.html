@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="main.css" rel="stylesheet">
+    <title>Возьми контроль над своими действиями</title>
+    <script>
+    function disp(form) {
+        if (form.style.display == "none") {
+            form.style.display = "block";
+        } else {
+            form.style.display = "none";
+        }
+    }
+    </script>
+  </head>
+  <body>
+        <input type="button" value="казать/Скрыть" onclick="disp(document.getElementById('form1'))" />
+         <div class="greetings-container">
+           <a href="login.html"><button href="login.html">Вход</button></a>
+           </div>
+           <h1 class="hello-text">Вы знаете, что делать. Надо просто делать.</h1>
+           <h1 class="heading">WatchMe</h1>
+           <h2>Планер для достижения целей.</h2>
+           <div class="main-container">
+                 <img class="element-1">
+                 <dd class="element-2">Планируйте свой день, месяц, год и даже жизнь.</dd>
+                 <img class="element-3">
+                 <dd class="element-4">Создавайте командные проекты, чтобы четко знать, куда вы стремитесь.</dd>
+                 <img class="element-5">
+                 <dd class="element-6">Отслеживайте прогресс достижения целей</dd>
+         </div>
+         <h1 class="price">49<sub>₽месяц</sub></h1>
+         <h2>Единая подписка для полного личного функционала. Это на 75% дешевле, чем средняя подписка на других таск-менеджерах. </h2>
+         <div class="white-container">
+               <h1 class="price black">349<sub>₽месяц</sub></h1>
+               <h2 class="black">Единая подписка для полного командного функционала. Пригласите в проект до 20 человек. </h2>
+               <div class="align-container">
+                   <form class="registration" action="index.html" method="post">
+                          <label for="email">Электронная почта:</label>
+                          <input type="email" name="email" id="email" placeholder="Введите ваш email">
+                          <label for="name" name="name">Ваше имя:</label>
+                          <input type="text" id="name" placeholder="Введите ваше имя">
+                          <label for="password">Придумайте пароль:</label>
+                          <input type="password" id="password" placeholder="Не менее 6 символов">
+                          <input class="try-for-free" type="submit" value="Попробовать бесплатно">
+                   </form>
+               </div>
+         </div>
+         <footer>
+                 <p>@Watch Me 2021. ООО "Вотч Ми"<p>
+                 <p>Политика конфиденциальности<p>
+         </footer>
+  </body>
+</html>

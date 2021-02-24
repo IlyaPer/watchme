@@ -34,7 +34,7 @@
 	if (empty($errors)){
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $new_year_task = [$_POST['content']];
-			$sql = 'INSERT INTO `tasks`( `date_creation`, `content`, `category_id`, `user_id`) VALUES (NOW(), ?, 1, 1);';
+			$sql = 'INSERT INTO `main_tasks`( `date_creation`, `content`, `category_id`, `user_id`) VALUES (NOW(), ?, 1, 1);';
 
 			$stmt = db_get_prepare_stmt($connection, $sql, $new_year_task);
 			$res = mysqli_stmt_execute($stmt);

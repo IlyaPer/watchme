@@ -40,17 +40,18 @@ body{
     margin-top: 15px;
 }
 .month-button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50%;
-    width: 190px;
+    font-size: 15px;
+    height: 15px;
+    width: 180px;
     display: grid;
-    grid-template-columns: 160px 20px;
+    grid-template-columns: 125px 20px;
     grid-template-rows: 50px;
 }
+.month-button:hover{
+    cursor: pointer;
+}
 .up20{
-    padding-top: 20px;
+    padding-top: 10px;
     width: 20px;
 }
 .first-point{
@@ -159,15 +160,16 @@ a:hover{
     width: 50%;
 }
 .align-content{
-    margin-left: 25%;
+    padding-left: 25px;
 }
 .flex-container{
+    margin-left: 25px;
     width: 395px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     font-size: 13px;
-    padding: 0;
+    padding-left: 10px;
     list-style: none;
 }
 .flex-item{
@@ -211,12 +213,10 @@ a:hover{
   color: green;
 }
 input[type=task] {
-  width: 50%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 10px;
+  font-size: 15px;
+  height: 35px;
+  margin: 5px 0 2px 0;
   border: none;
   background: #f1f1f1;
 }
@@ -231,7 +231,7 @@ input[type=task] {
     cursor: pointer; /* Mouse pointer on hover */
 }
 .green{
-   background: rgba(45, 181, 66, 1); 
+   background: rgba(45, 181, 66, 1);
 }
 .green: hover{
    box-shadow: 10px solid black;
@@ -258,12 +258,12 @@ input[type=task] {
     text-align: center;
 }
 .tarif{
-    display: grid; 
+    display: grid;
     margin: 20px;
     grid-template-columns: 35% 35%;
     text-align: center;
     grid-gap: 20%;
-    
+
 }
 .grid-element-tarif{
     border: 2px solid black;
@@ -317,7 +317,7 @@ input[type=task] {
     background-color: rgba(245, 235, 235, 1);
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     cursor: pointer;
-    
+
 }
 .active{
     background-color: rgb(0, 0, 0);
@@ -352,7 +352,7 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
     border: none;
     background: url("svg/003-darts.svg") no-repeat;
-    
+
 }
 input[type="checkbox"]:checked span{
     text-decoration: line-through;
@@ -474,7 +474,7 @@ a:hover{
         text-decoration: line-through;
         color: green;
         cursor:pointer;
-    } 
+    }
 .new-project-buttons{
     display: grid;
     grid-template-columns: 150px 150px 150px 150px;
@@ -488,4 +488,10 @@ a:hover{
     display: grid;
     grid-template-columns: 160px 20px;
     grid-template-rows: 50px;
+}
+.container-new-task{
+  display: grid;
+  grid-template-columns: 200px 40px;
+  grid-gap: 10px;
+  padding-left: 10px;
 }
